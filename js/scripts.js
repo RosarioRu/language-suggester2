@@ -26,6 +26,9 @@ $(document).ready(function() {
     const totalAs=(countLetter(totalString, "a"));
     alert(totalAs);
     const totalBs=(countLetter(totalString, "b"));
+    alert(totalBs);
+    const totalCs=(countLetter(totalString, "c"));
+    alert(totalCs);
   
     });
 
