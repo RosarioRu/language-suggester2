@@ -69,6 +69,7 @@ $(document).ready(function() {
       let result = "Javascript";
       alert(result);
       $(".show-results").show();
+      $("#results").show();
       $("#result").text(result);
     }
     });
