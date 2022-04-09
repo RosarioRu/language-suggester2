@@ -3,10 +3,14 @@ $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val();
-    const userColor=$("#color").val();
-    const userAge=$("#age").val();
+    const question1=$("#color").val();
+    const question2=$("#age").val();
+    const question3=$("#socks").val();
+    const question4=$("#drink").val();
+    const question5=$("#eliminate").val();
+    
 
-    let totalString = (userColor+userAge);
+    let totalString = (question1+question2+question3+question4+question5);
     alert(totalString);
     
     function countLetter(string, letter) {
