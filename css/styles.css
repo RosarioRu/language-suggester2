@@ -28,9 +28,19 @@ body {
 
 
 
-.tie, .show-results, #ruby {
+.tie, .show-results, #ruby, #results {
   display:none;
 }
 
+#results {
+  box-sizing: border-box;
+  border: 5px dotted rgb(98, 44,150);
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 100px;
+  text-align: center;
+  font-size: larger;
+}
 
 
