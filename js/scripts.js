@@ -4,10 +4,14 @@ $(document).ready(function() {
     event.preventDefault();
     const userLanguage = $("#language").val();
 
-    if (
-    // if (age >= 21) {
-    //   $('#drinks').show();
-
+    if (userLanguage==="English") {
+      $("#select-language").hide();
+      $(".english").show();
+    } else {
+      $("#select-language").hide();
+      $(".spanish").show();
+    }
+  });
 
   $("form#questions").submit(function(event) {
     event.preventDefault();
