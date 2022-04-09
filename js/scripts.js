@@ -30,6 +30,7 @@ $(document).ready(function() {
       let result = "Ruby";
       alert(result);
       $(".show-results").show();
+      $("#results").show();
       $("#result").text(result);
       // $("#result").text(result);
       // $(".show-results").show();
@@ -62,7 +63,7 @@ $(document).ready(function() {
     } else {
       let result = "Javascript";
       alert(result);
-      $(".show-results").toggle();
+      $(".show-results").show();
       $("#result").text(result);
     }
     });
