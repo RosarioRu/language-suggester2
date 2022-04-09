@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+  $("form#select-language").submit(function(event) {
+    event.preventDefault();
+    const userLanguage = $("#language").val();
+
+    if (
+    // if (age >= 21) {
+    //   $('#drinks').show();
+
+
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val().toUpperCase();
