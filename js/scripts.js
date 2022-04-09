@@ -12,7 +12,7 @@ $(document).ready(function() {
     function countLetter(string, letter) {
       let count=0;
       for (let i=0; i<string.length; i++) {
-        if(string.charAt(i)==letter) {
+        if(string.charAt(i)===letter) {
           count +=1;
         }
       }
@@ -20,6 +20,7 @@ $(document).ready(function() {
       }
     
     const totalAs=(countLetter(totalString, "a"));
+    alert(totalAs);
     const totalBs=(countLetter(totalString, "b"));
   
     });
