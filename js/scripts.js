@@ -3,6 +3,8 @@ $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val();
+    const userColor = $("#colors").val();
+
 
  
   });
@@ -28,16 +30,17 @@ $(document).ready(function() {
 
 // If a=c then same as above
 
-1. which of the primary colors if your fav?
-a. red(ruby)  b. blue(python)  c.yellow(C++)
+// 1. which of the primary colors if your fav?
+// a. red(ruby)  b. blue(python)  c.yellow(C++)
 
-2. Select the number closest to your age?
-a. 0(ruby)    b. 100(python)   c. 21(c++)
+// 2. Select the number closest to your age?
+// a. 0(ruby)    b. 100(python)   c. 21(c++)
 
-3. What's your opinon of wearing socks with sandals?
-a. Hate it(ruby) b.Love it(python)  c. neutral(c++)
+// 3. What's your opinon of wearing socks with sandals?
+// a. Hate it(ruby) b.Love it(python)  c. neutral(c++)
 
-4. Choose a drink?
-a. icy cold IPA (ruby) b.Black coffee(python)  b. Caprisun(C++)
+// 4. Choose a drink?
+// a. icy cold IPA (ruby) b.Black coffee(python)  b. Caprisun(C++)
 
-5. 
+// 5. If you could eliminate only one of the following, which would it be?
+// a. poisonous snakes(ruby)  b.cargo shorts (python) c.your old myspace acct (c++)
