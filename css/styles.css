@@ -19,3 +19,7 @@ body {
 .btn {
   background-color: white;
 }
+
+#name {
+  width: 50%;
+}
