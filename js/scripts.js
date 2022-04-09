@@ -6,25 +6,23 @@ $(document).ready(function() {
     const userColor=$("#color").val();
     const userAge=$("#age").val();
 
-    let total = (userColor+userAge);
-    alert(total);
-    alert(total.count(a));
+    let totalString = (userColor+userAge);
+    alert(totalString);
     
+    function countLetter(string, letter) {
+      let count=0;
+      for (let i=0; i<string.length; i++) {
+        if(string.charAt(i)==letter) {
+          count +=1;
+        }
+      }
+        return count;
+      }
     
-    // let ayes = total.count("a");
-    
-    // let quote = (100 - age) * 3;
-    // if (gender === 'male' && age < 26) {
-    //   quote += 50;
-    // }
-
-    // $("#rate").text(quote);
-    // $("#quote").show()
-
-
-
-
-  });
+    const totalAs=(countLetter(totalString, "a"));
+    const totalBs=(countLetter(totalString, "b"));
+  
+    });
 
 });
 
