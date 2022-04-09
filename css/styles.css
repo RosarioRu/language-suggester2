@@ -19,14 +19,21 @@ body {
 .btn {
   background-color: white;
   margin-top: 10px;
+  margin-bottom:10px;
 }
 
 #name, #color, #age, #socks, #drink, #eliminate, #tie-breaker {
   width: 50%;
 }
 
+
+
 .tie {
   display:none;
+}
+
+.reset {
+  display:inline;
 }
 
 
