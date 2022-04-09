@@ -1,25 +1,5 @@
 $(document).ready(function() {
 
-  $("form#select-language").submit(function(event) {
-    event.preventDefault();
-    const userLanguage = $("#language").val();
-
-    if (userLanguage==="English") {
-      $("#select-language").hide();
-      $(".english").show();
-
-      // $("button#yellow").click(function() {
-      //   $("body").removeClass();
-      //   $("body").addClass("yellow-background");
-      
-    } else {
-      $("#select-language").hide();
-      $(".spanish").show();
-    }
-  });
-
-  
-
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val().toUpperCase();
