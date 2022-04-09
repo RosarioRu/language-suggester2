@@ -22,6 +22,7 @@ body {
   margin-bottom:10px;
 }
 
+
 #name, #color, #age, #socks, #drink, #eliminate, #tie-breaker {
   width: 90%;
 }

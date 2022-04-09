@@ -71,6 +71,7 @@ $(document).ready(function() {
       $("#result").text(result);
     }
     });
+
 });
 
 // 1. a,b,c
