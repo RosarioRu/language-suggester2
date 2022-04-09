@@ -28,12 +28,9 @@ body {
 
 
 
-.tie {
+.tie, .show-results, #ruby {
   display:none;
 }
 
-.reset {
-  display:inline;
-}
 
 
