@@ -35,9 +35,14 @@ $(document).ready(function() {
       // $(".show-results").show();
     } else if (totalBs>totalAs && totalBs>totalCs) {
       let result = "Python";
+      $(".show-results").show();
+      $("#result").text(result);
     } else if (totalCs>totalAs && totalCs>totalBs) {
       let result = "C++";
+      $(".show-results").show();
+      $("#result").text(result);
     } else if (totalAs===totalBs) {
+      $(".show-results").hide();
       $("#questions").hide();    
       $(".tie").show();
       $("form#tied").submit(function(event) {
@@ -45,14 +50,20 @@ $(document).ready(function() {
         if ("Chocolate" ===$("#tie-breaker").val()) {
           let result = "Ruby";
           alert(result);
+          $(".show-results").show();
+          $("#result").text(result);
         } else {
           let result = "Python";
           alert(result);
+          $(".show-results").show();
+          $("#result").text(result);
         }
       });
     } else {
       let result = "Javascript";
       alert(result);
+      $(".show-results").toggle();
+      $("#result").text(result);
     }
     });
 });
