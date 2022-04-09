@@ -2,6 +2,10 @@ body {
   background-color: rgb(224, 238, 241);
 }
 
+.english, .spanish {
+  display:none;
+}
+
 .jumbotron {
   background-image: linear-gradient(to bottom right, rgb(199, 223, 229), rgb(146, 184, 196));
   text-align: center;
@@ -22,12 +26,9 @@ body {
   margin-bottom:10px;
 }
 
-
 #name, #color, #age, #socks, #drink, #eliminate, #tie-breaker {
   width: 90%;
 }
-
-
 
 .tie, .show-results, #ruby, #results {
   display:none;

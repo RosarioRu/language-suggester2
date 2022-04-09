@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    
+
     <form id="select-language">
       <label for="language">Select Language/Escoja su Lenguaje</label>
       <select class="form-control" id="language" required>
@@ -20,81 +20,146 @@
       <button type="submit" class="btn">Continue</button>
     </form>
 
-    
-
-  <div class="english">
-    <div class="jumbotron">
-      <h1>Welcome To The Programming Language Suggester!</h1>
-      <p>So you've decided you want to learn how to code. Congratulations! There are hundreds of programming languages out there, so how do you know you are choosing the right one? Do not worry! You've come to the right place. The <strong>amazing</strong> and <strong>definitive</strong> Programming Language Suggester will analyze your responses to the following questions and tell you which is the perfect first language for you.</p>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <form id="questions">
-          <div class="form-group">
-            <label for="name">Please enter your name</label>
-            <input id="name" class="form-control" type="text" required>
-          </div>
-          <label for="color">Which of the primary colors is your favorite?</label>
-          <select class="form-control" id="color" required>
-            <option value=""></option>
-            <option value="a">Red</option>
-            <option value="b">Blue</option>
-            <option value="c">Yellow</option>
-          </select>
-          <label for="age">Select the number closest to your age?</label>
-          <select class="form-control" id="age" required>
-            <option value=""></option>
-            <option value="a">0</option>
-            <option value="b">51</option>
-            <option value="c">100</option>
-          </select>
-          <label for="socks">What's your opinon of wearing socks with sandals?</label>
-          <select class="form-control" id="socks" required>
-            <option value=""></option>
-            <option value="a">Hate it!</option>
-            <option value="b">Love it!</option>
-            <option value="c">Neutral</option>
-          </select>
-          <label for="drink">Choose a drink</label>
-          <select class="form-control" id="drink" required>
-            <option value=""></option>
-            <option value="a">Icy cold IPA</option>
-            <option value="b">Black Coffee</option>
-            <option value="c">Capri Sun</option>
-          </select>
-          <label for="eliminate">If you could eliminate only one of the following, which would it be?</label>
-          <select class="form-control" id="eliminate" required>
-            <option value=""></option>
-            <option value="a">Poisonous Snakes</option>
-            <option value="b">Cargo Shorts</option>
-            <option value="c">All trace of your old MySpace Acct.</option>
-          </select>
-          <button type="submit" class="btn">Show me my language!</button>   
-        </form>
-        <div class="tie">
-          <form id="tied">
-            <label for="tie-breaker">Okay just one more question. Do you prefer:</label>
-            <select class="form-control" id="tie-breaker" required>
+    <div class="english">
+      <div class="jumbotron">
+        <h1>Welcome To The Programming Language Suggester!</h1>
+        <p>So you've decided you want to learn how to code. Congratulations! There are hundreds of programming languages out there, so how do you know you are choosing the right one? Do not worry! You've come to the right place. The <strong>amazing</strong> and <strong>definitive</strong> Programming Language Suggester will analyze your responses to the following questions and tell you which is the perfect first language for you.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="questions">
+            <div class="form-group">
+              <label for="name">Please enter your name</label>
+              <input id="name" class="form-control" type="text" required>
+            </div>
+            <label for="color">Which of the primary colors is your favorite?</label>
+            <select class="form-control" id="color" required>
               <option value=""></option>
-              <option>Chocolate</option>
-              <option>Or Vanilla</option>
+              <option value="a">Red</option>
+              <option value="b">Blue</option>
+              <option value="c">Yellow</option>
             </select>
-            <button type="submit" class="btn">Continue</button>
+            <label for="age">Select the number closest to your age?</label>
+            <select class="form-control" id="age" required>
+              <option value=""></option>
+              <option value="a">0</option>
+              <option value="b">51</option>
+              <option value="c">100</option>
+            </select>
+            <label for="socks">What's your opinon of wearing socks with sandals?</label>
+            <select class="form-control" id="socks" required>
+              <option value=""></option>
+              <option value="a">Hate it!</option>
+              <option value="b">Love it!</option>
+              <option value="c">Neutral</option>
+            </select>
+            <label for="drink">Choose a drink</label>
+            <select class="form-control" id="drink" required>
+              <option value=""></option>
+              <option value="a">Icy cold IPA</option>
+              <option value="b">Black Coffee</option>
+              <option value="c">Capri Sun</option>
+            </select>
+            <label for="eliminate">If you could eliminate only one of the following, which would it be?</label>
+            <select class="form-control" id="eliminate" required>
+              <option value=""></option>
+              <option value="a">Poisonous Snakes</option>
+              <option value="b">Cargo Shorts</option>
+              <option value="c">All trace of your old MySpace Acct.</option>
+            </select>
+            <button type="submit" class="btn">Show me my language!</button>   
           </form>
+          <div class="tie">
+            <form id="tied">
+              <label for="tie-breaker">Okay just one more question. Do you prefer:</label>
+              <select class="form-control" id="tie-breaker" required>
+                <option value=""></option>
+                <option>Chocolate</option>
+                <option>Or Vanilla</option>
+              </select>
+              <button type="submit" class="btn">Continue</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6" id="results">
+          <div class="show-results">
+            <h1><span id="insert-name"></span>'S RESULTS</h1>
+            <p>Thank you for submitting your answers. We have reviewed the results using only the most top-notch-peer-reviewed scientific methods and have come to the conclussion that <span id="result"></span> is the best language for you to learn!</p>
+          </div>
+        </div>
+      </div><!--row-->
+    </div><!-- "english" --> 
+
+    <div class="spanish">
+      <div class="jumbotron">
+        <h1>Welcome To The Programming Language Suggester!</h1>
+        <p>So you've decided you want to learn how to code. Congratulations! There are hundreds of programming languages out there, so how do you know you are choosing the right one? Do not worry! You've come to the right place. The <strong>amazing</strong> and <strong>definitive</strong> Programming Language Suggester will analyze your responses to the following questions and tell you which is the perfect first language for you.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="questions">
+            <div class="form-group">
+              <label for="name">Please enter your name</label>
+              <input id="name" class="form-control" type="text" required>
+            </div>
+            <label for="color">Which of the primary colors is your favorite?</label>
+            <select class="form-control" id="color" required>
+              <option value=""></option>
+              <option value="a">Red</option>
+              <option value="b">Blue</option>
+              <option value="c">Yellow</option>
+            </select>
+            <label for="age">Select the number closest to your age?</label>
+            <select class="form-control" id="age" required>
+              <option value=""></option>
+              <option value="a">0</option>
+              <option value="b">51</option>
+              <option value="c">100</option>
+            </select>
+            <label for="socks">What's your opinon of wearing socks with sandals?</label>
+            <select class="form-control" id="socks" required>
+              <option value=""></option>
+              <option value="a">Hate it!</option>
+              <option value="b">Love it!</option>
+              <option value="c">Neutral</option>
+            </select>
+            <label for="drink">Choose a drink</label>
+            <select class="form-control" id="drink" required>
+              <option value=""></option>
+              <option value="a">Icy cold IPA</option>
+              <option value="b">Black Coffee</option>
+              <option value="c">Capri Sun</option>
+            </select>
+            <label for="eliminate">If you could eliminate only one of the following, which would it be?</label>
+            <select class="form-control" id="eliminate" required>
+              <option value=""></option>
+              <option value="a">Poisonous Snakes</option>
+              <option value="b">Cargo Shorts</option>
+              <option value="c">All trace of your old MySpace Acct.</option>
+            </select>
+            <button type="submit" class="btn">Show me my language!</button>   
+          </form>
+          <div class="tie">
+            <form id="tied">
+              <label for="tie-breaker">Okay just one more question. Do you prefer:</label>
+              <select class="form-control" id="tie-breaker" required>
+                <option value=""></option>
+                <option>Chocolate</option>
+                <option>Or Vanilla</option>
+              </select>
+              <button type="submit" class="btn">Continue</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6" id="results">
+          <div class="show-results">
+            <h1><span id="insert-name"></span>'S RESULTS</h1>
+            <p>Thank you for submitting your answers. We have reviewed the results using only the most top-notch-peer-reviewed scientific methods and have come to the conclussion that <span id="result"></span> is the best language for you to learn!</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-6" id="results">
-        <div class="show-results">
-          <h1><span id="insert-name"></span>'S RESULTS</h1>
-          <p>Thank you for submitting your answers. We have reviewed the results using only the most top-notch-peer-reviewed scientific methods and have come to the conclussion that <span id="result"></span> is the best language for you to learn!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><!-- </div> for class "english" -->
+    </div><!-- </div> for class "spanish"> -->
 
-<div class="spanish">
-</div><!-- </div> for class "spanish"> -->
-
+  </div><!-- container-->
 </body>
 </html>

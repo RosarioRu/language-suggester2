@@ -7,6 +7,11 @@ $(document).ready(function() {
     if (userLanguage==="English") {
       $("#select-language").hide();
       $(".english").show();
+
+      // $("button#yellow").click(function() {
+      //   $("body").removeClass();
+      //   $("body").addClass("yellow-background");
+      
     } else {
       $("#select-language").hide();
       $(".spanish").show();
