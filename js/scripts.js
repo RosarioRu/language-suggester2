@@ -3,8 +3,23 @@ $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val();
-    const userColor = $("#color").val();
-    const userAge = $("#age").val();
+    const userColor=$("#color").val();
+    const userAge=$("#age").val();
+
+    let total = (userColor+userAge);
+    alert(total);
+    alert(total.count(a));
+    
+    
+    // let ayes = total.count("a");
+    
+    // let quote = (100 - age) * 3;
+    // if (gender === 'male' && age < 26) {
+    //   quote += 50;
+    // }
+
+    // $("#rate").text(quote);
+    // $("#quote").show()
 
 
 
