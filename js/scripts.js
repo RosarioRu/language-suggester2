@@ -3,10 +3,12 @@ $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val();
-    const userColor = $("#colors").val();
+    const userColor = $("#color").val();
+    const userAge = $("#age").val();
 
 
- 
+
+
   });
 
 });
