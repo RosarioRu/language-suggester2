@@ -28,6 +28,11 @@ $(document).ready(function() {
     
     if (totalAs>totalBs && totalAs>totalCs) {
       let result = "Ruby";
+      alert(result);
+      $(".show-results").show();
+      $("#result").text(result);
+      // $("#result").text(result);
+      // $(".show-results").show();
     } else if (totalBs>totalAs && totalBs>totalCs) {
       let result = "Python";
     } else if (totalCs>totalAs && totalCs>totalBs) {
@@ -49,7 +54,6 @@ $(document).ready(function() {
       let result = "Javascript";
       alert(result);
     }
-    alert(result);
     });
 });
 
