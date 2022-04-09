@@ -9,10 +9,9 @@ $(document).ready(function() {
     const question4=$("#drink").val();
     const question5=$("#eliminate").val();
     
-
-    let totalString = (question1+question2+question3+question4+question5);
+    const totalString = (question1+question2+question3+question4+question5);
     alert(totalString);
-    
+
     function countLetter(string, letter) {
       let count=0;
       for (let i=0; i<string.length; i++) {
@@ -22,13 +21,19 @@ $(document).ready(function() {
       }
         return count;
       }
-    
+
     const totalAs=(countLetter(totalString, "a"));
-    alert(totalAs);
     const totalBs=(countLetter(totalString, "b"));
-    alert(totalBs);
     const totalCs=(countLetter(totalString, "c"));
-    alert(totalCs);
+
+    if (totalAs>totalBs && totalAs>totalCs) {
+      let result = "Ruby";
+    }
+    
+    // if (gender === 'male' && age < 26) {
+    //   quote += 50;
+    // }
+
   
     });
 
