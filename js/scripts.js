@@ -37,13 +37,16 @@ $(document).ready(function() {
     } else if (totalBs>totalAs && totalBs>totalCs) {
       let result = "Python";
       $(".show-results").show();
+      $("#results").show();
       $("#result").text(result);
     } else if (totalCs>totalAs && totalCs>totalBs) {
       let result = "C++";
       $(".show-results").show();
+      $("#results").show();
       $("#result").text(result);
     } else if (totalAs===totalBs) {
       $(".show-results").hide();
+      $("#results").hide();
       $("#questions").hide();    
       $(".tie").show();
       $("form#tied").submit(function(event) {
@@ -52,11 +55,13 @@ $(document).ready(function() {
           let result = "Ruby";
           alert(result);
           $(".show-results").show();
+          $("#results").show();
           $("#result").text(result);
         } else {
           let result = "Python";
           alert(result);
           $(".show-results").show();
+          $("#results").show();
           $("#result").text(result);
         }
       });
