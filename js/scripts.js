@@ -10,7 +10,6 @@ $(document).ready(function() {
     const question5=$("#eliminate").val();
     
     const totalString = (question1+question2+question3+question4+question5);
-    alert(totalString);
 
     function countLetter(string, letter) {
       let count=0;
@@ -28,13 +27,10 @@ $(document).ready(function() {
     
     if (totalAs>totalBs && totalAs>totalCs) {
       let result = "Ruby";
-      alert(result);
       $(".show-results").show();
       $("#results").show();
       $("#result").text(result);
       $("#insert-name").text(userName);
-      // $("#result").text(result);
-      // $(".show-results").show();
     } else if (totalBs>totalAs && totalBs>totalCs) {
       let result = "Python";
       $(".show-results").show();
@@ -50,21 +46,18 @@ $(document).ready(function() {
     } else if (totalAs===totalBs) {
       $(".show-results").hide();
       $("#results").hide();
-      $("#insert-name").hide();
       $("#questions").hide();    
       $(".tie").show();
       $("form#tied").submit(function(event) {
       event.preventDefault();
         if ("Chocolate" ===$("#tie-breaker").val()) {
           let result = "Ruby";
-          alert(result);
           $(".show-results").show();
           $("#results").show();
           $("#result").text(result);
           $("#insert-name").text(userName);
         } else {
           let result = "Python";
-          alert(result);
           $(".show-results").show();
           $("#results").show();
           $("#result").text(result);
@@ -73,7 +66,6 @@ $(document).ready(function() {
       });
     } else {
       let result = "Javascript";
-      alert(result);
       $(".show-results").show();
       $("#results").show();
       $("#result").text(result);
