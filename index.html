@@ -14,6 +14,8 @@
     <p>So you've decided you want to learn how to code. Congratulations! There are hundreds of programming languages out there, so how do you know you are choosing the right one? Do not worry! You've come to the right place. The <strong>amazing</strong> and <strong>definitive</strong> Programming Language Suggester will analyze your responses to the following questions and tell you which is the perfect first language for you.</p>
   </div>
 
+  <div class="row">
+    <div class="col-6">
   <div>
     <form id="questions">
       <div class="form-group">
@@ -61,7 +63,7 @@
 
   <div class="tie">
     <form id="tied">
-    <label for="tie-breaker">One more question, actually, do you prefer:</label>
+    <label for="tie-breaker">Okay just one more question. Do you prefer:</label>
       <select class="form-control" id="tie-breaker" required>
         <option value=""></option>
         <option>Chocolate</option>
@@ -70,7 +72,9 @@
       <button type="submit" class="btn">Continue</button>
     </form>
   </div>
+  </div><!-- <div class="col-6"> -->
 
+  <div class="col-6">
   <div class="show-results">
     <p>Thank you for submitting your answers. We have reviewed the results using only the most top-notch-peer-reviewed scientific methods and have come to the conclussion that <span id="result"></span> is the best language for you to learn!</p>
   </div>
@@ -90,8 +94,9 @@
 
 
 
+      </div><!-- <div class="col-6"> -->
 
-
+    </div><!--class row -->
   </div>
 </body>
 </html>
