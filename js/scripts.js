@@ -18,6 +18,8 @@ $(document).ready(function() {
     }
   });
 
+  
+
   $("form#questions").submit(function(event) {
     event.preventDefault();
     const userName=$("input#name").val().toUpperCase();
@@ -26,8 +28,10 @@ $(document).ready(function() {
     const question3=$("#socks").val();
     const question4=$("#drink").val();
     const question5=$("#eliminate").val();
+    alert(userName);
     
     const totalString = (question1+question2+question3+question4+question5);
+    alert(totalString);
 
     function countLetter(string, letter) {
       let count=0;
@@ -42,6 +46,9 @@ $(document).ready(function() {
     const totalAs=(countLetter(totalString, "a"));
     const totalBs=(countLetter(totalString, "b"));
     const totalCs=(countLetter(totalString, "c"));
+    alert(totalAs);
+    alert(totalBs);
+    alert(totalCs);
     
     if (totalAs>totalBs && totalAs>totalCs) {
       let result = "Ruby";
@@ -89,6 +96,7 @@ $(document).ready(function() {
       $("#result").text(result);
     }
     });
+
 
 });
 
