@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $("form#questions").submit(function(event) {
     event.preventDefault();
-    const userName=$("input#name").val();
+    const userName=$("input#name").val().toUpperCase();
     const question1=$("#color").val();
     const question2=$("#age").val();
     const question3=$("#socks").val();
