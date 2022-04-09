@@ -32,6 +32,7 @@ $(document).ready(function() {
       $(".show-results").show();
       $("#results").show();
       $("#result").text(result);
+      $("#insert-name").text(userName);
       // $("#result").text(result);
       // $(".show-results").show();
     } else if (totalBs>totalAs && totalBs>totalCs) {
