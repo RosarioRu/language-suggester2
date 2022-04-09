@@ -28,8 +28,18 @@ $(document).ready(function() {
 
     if (totalAs>totalBs && totalAs>totalCs) {
       let result = "Ruby";
+      alert(result);
+      console.log(result);
+    } else if (totalBs>totalAs && totalBs>totalCs) {
+      let result = "Python";
+    } else if (totalCs>totalAs && totalCs>totalBs) {
+      let result = "C++";
+    } else {
+      let result = "Javascript";
     }
-    
+
+    alert(result);
+
     // if (gender === 'male' && age < 26) {
     //   quote += 50;
     // }
