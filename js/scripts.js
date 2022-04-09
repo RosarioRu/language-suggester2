@@ -40,14 +40,17 @@ $(document).ready(function() {
       $(".show-results").show();
       $("#results").show();
       $("#result").text(result);
+      $("#insert-name").text(userName);
     } else if (totalCs>totalAs && totalCs>totalBs) {
       let result = "C++";
       $(".show-results").show();
       $("#results").show();
       $("#result").text(result);
+      $("#insert-name").text(userName);
     } else if (totalAs===totalBs) {
       $(".show-results").hide();
       $("#results").hide();
+      $("#insert-name").hide();
       $("#questions").hide();    
       $(".tie").show();
       $("form#tied").submit(function(event) {
@@ -58,12 +61,14 @@ $(document).ready(function() {
           $(".show-results").show();
           $("#results").show();
           $("#result").text(result);
+          $("#insert-name").text(userName);
         } else {
           let result = "Python";
           alert(result);
           $(".show-results").show();
           $("#results").show();
           $("#result").text(result);
+          $("#insert-name").text(userName);
         }
       });
     } else {
