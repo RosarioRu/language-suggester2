@@ -27,24 +27,21 @@ $(document).ready(function() {
     if (totalAs>totalBs && totalAs>totalCs) {
       result = "Ruby";
       $(".show-results").show();
-      $("#results").show();
       $("#result").text(result);
       $("#insert-name").text(userName);
     } else if (totalBs>totalAs && totalBs>totalCs) {
       result = "Python";
       $(".show-results").show();
-      $("#results").show();
       $("#result").text(result);
       $("#insert-name").text(userName);
     } else if (totalCs>totalAs && totalCs>totalBs) {
       result = "C++";
       $(".show-results").show();
-      $("#results").show();
       $("#result").text(result);
       $("#insert-name").text(userName);
     } else if (totalAs===totalBs) {
 
-      $(".show-results").hide();
+      $(".show-results").toggle();
       $("#results").hide();
       $("#questions").hide();    
       $(".tie").show();
@@ -53,13 +50,11 @@ $(document).ready(function() {
         if ("Chocolate" ===$("#tie-breaker").val()) {
           result = "Ruby";
           $(".show-results").show();
-          $("#results").show();
           $("#result").text(result);
           $("#insert-name").text(userName);
         } else {
           result = "Python";
           $(".show-results").show();
-          $("#results").show();
           $("#result").text(result);
           $("#insert-name").text(userName);
         }
@@ -67,10 +62,10 @@ $(document).ready(function() {
     } else {
       result = "Javascript";
       $(".show-results").show();
-      $("#results").show();
       $("#result").text(result);
       $("#insert-name").text(userName);
     }
+    $("#results").show();
   });
   
 });
