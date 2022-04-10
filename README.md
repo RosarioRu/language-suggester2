@@ -28,7 +28,7 @@ _This webpage was created as the second project for Epicodus following the JavaS
 
 * _If needed, stylesheet, js file, and readme can also be opened from project home directory_
 
-* _[The Github page for this project:](https://rosarioru.github.io/language-suggester2/)_
+* _[See Github page for this project](https://rosarioru.github.io/language-suggester2/)_
 
 ## Known Bugs
 
