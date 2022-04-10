@@ -18,7 +18,6 @@ $(document).ready(function() {
       }
         return count;
       }
-
     const totalAs=(countLetter(totalString, "a"));
     const totalBs=(countLetter(totalString, "b"));
     const totalCs=(countLetter(totalString, "c"));
@@ -40,9 +39,6 @@ $(document).ready(function() {
       $("#result").text(result);
       $("#insert-name").text(userName);
     } else if (totalAs===totalBs) {
-
-      $(".show-results").toggle();
-      $("#results").hide();
       $("#questions").hide();    
       $(".tie").show();
       $("form#tied").submit(function(event) {
@@ -65,7 +61,6 @@ $(document).ready(function() {
       $("#result").text(result);
       $("#insert-name").text(userName);
     }
-    $("#results").show();
+    $("#results").show();          
   });
-  
 });
